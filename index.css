@@ -53,137 +53,129 @@ button {
         border-radius: 50%;
     }
 
-    @media (max-width: 468px) {
+    @media (max-width: 576px) {
+  /* Brand layout */
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
 
-        /* Stack navbar icons vertically */
-        .form-inline {
-            flex-direction: column;
-            align-items: center;
-        }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
 
-        .form-inline p {
-            margin: 8px 0;
-            font-size: 14px;
-        }
+  /* Icons row (Compare, Wishlist, Cart) */
+  .form-inline {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
 
-        /* Badge adjustments */
-        .icon-badge {
-            font-size: 10px;
-            width: 16px;
-            height: 16px;
-            line-height: 16px;
-            top: -6px;
-            right: -6px;
-        }
+  .form-inline p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4;
+  }
 
-        /* Stack image categories vertically */
-        .photo,
-        .photo2 {
-            flex-direction: column;
-            align-items: center;
-        }
+  /* Badge fix */
+  .position-icon {
+    position: relative;
+    display: inline-block;
+  }
 
-        .image1,
-        .image2,
-        .image3,
-        .image4,
-        .image5,
-        .image6 {
-            padding-left: 0;
-            margin-bottom: 20px;
-            text-align: center;
-        }
+  .icon-badge {
+    position: absolute;
+    top: 23px;
+    right: -1px;
+    font-size: 11px;
+    transform: translate(50%, -50%);
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 50%;
+  }
 
-        /* Make all cards take full width */
-        .card.mb-3 {
-            max-width: 100% !important;
-            margin: 10px auto !important;
-        }
+  /* Image block stack */
+  .photo,
+  .photo2 {
+    flex-direction: column;
+    align-items: center;
+  }
 
-        /* Fix last card alignment */
-        .card.mb-3:last-of-type {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6 {
+    padding-left: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 
-        /* Stack inner row inside cards */
-        .card .row {
-            flex-direction: column;
-        }
+  /* Product cards full width */
+  .card.mb-3 {
+    max-width: 90% !important;
+    margin: 10px auto !important;
+  }
 
-        .card .col-md-8,
-        .card .col-md-4 {
-            max-width: 100%;
-            flex: 0 0 100%;
-            text-align: center;
-        }
+  .card .row {
+    flex-direction: column;
+  }
 
-        .card .card-body {
-            text-align: center;
-        }
+  .card .col-md-8,
+  .card .col-md-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
 
-        .card img {
-            width: 80%;
-            height: auto;
-            margin: 10px auto;
-        }
+  .card .card-body {
+    text-align: center;
+  }
 
-        /* Navbar brand tweaks */
-        .navbar-brand {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  .card img {
+    width: 90% !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
 
-        .navbar-toggler {
-            margin-bottom: 10px;
-        }
+  /* Center laptop section */
+  .d-flex.justify-content-around.bg-light,
+  .d-flex.justify-content-around {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
 
-        /* Product content block */
-        .d-flex.justify-content-around.bg-light {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+  .Laptops img {
+    width: 90%;
+    height: auto;
+  }
 
-        .Laptops img {
-            width: 90%;
-            height: auto;
-        }
+  .data {
+    margin: 20px 0;
+  }
 
-        .data {
-            margin: 20px 0;
-        }
+  .data h1 {
+    font-size: 22px;
+  }
 
-        .data h1 {
-            font-size: 22px;
-        }
+  .data p {
+    font-size: 14px;
+  }
 
-        .data p {
-            font-size: 14px;
-        }
-
-        button {
-            font-size: 14px;
-            padding: 8px 12px;
-        }
-
-        .card img {
-            width: 100% !important;
-            height: auto !important;
-            object-fit: contain;
-            margin: 0 auto;
-            display: block;
-        }
-
-        /* Make card layout stack vertically */
-        .d-flex.justify-content-around {
-            flex-direction: column !important;
-            align-items: center !important;
-        }
-
-        .card {
-            max-width: 90% !important;
-            margin-bottom: 20px !important;
-        }
-    }
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
